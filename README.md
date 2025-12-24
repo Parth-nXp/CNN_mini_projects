@@ -1,3 +1,5 @@
 # CNN Mini Projects
 
 This repository is a collection of small CNN experiments created for learning and practice. Each experiment focuses on understanding a specific concept such as data loading, model training, evaluation, and experimentation with convolutional neural networks using simple datasets.
+
+1. [Fake Data Multiclass Classification](fake_data_multiclass.ipynb): This mini-project demonstrates a lightweight image classification pipeline in PyTorch using torchvision.datasets.FakeData to simulate a 10-class dataset (3×32×32 images). It focuses on understanding the vision training workflow end-to-end: dataset creation with transforms (ToTensor), mini-batch loading via DataLoader, and building a minimal CNN architecture (single Conv2D → ReLU → MaxPool → Flatten → Linear classifier). The model is trained on CPU/GPU using a standard training loop with CrossEntropyLoss + Adam, showing how logits-based multi-class classification is handled in PyTorch. Training progress is tracked through an epoch-wise loss curve, making it a quick, controlled experiment to validate CNN plumbing and debug the full image-training pipeline without relying on external datasets.
